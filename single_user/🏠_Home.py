@@ -20,12 +20,15 @@ def authenticate():
         with st.spinner('Logging in ...'):
 
         # Update your Chrome WebDriver initialization with these options
+            print("step 1")
             driver = webdriver.Chrome()
         
-            
+        
+            print("step 2")
         # Navigate to the website
             website = 'https://trakcarelabwebview.nhls.ac.za/trakcarelab/csp/system.Home.cls#/Component/SSUser.Logon'
             driver.get(website)
+            print("step 3")
 
 
             # Wait for the login page elements
